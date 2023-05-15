@@ -1,0 +1,9 @@
+Github Versioning Control Rules
+Newly Use Repository
+- git init / menginisiasi dari local git
+- git add . / menammbahkan semua folder/file baru ke dalam local git
+- git commit -m "your messages" / untuk memberikan message terhadap folder/file yang kita tambah
+- git remote add remote_name https://remote.link
+- git push remote-_name branch_name
+
+Editing Repository
