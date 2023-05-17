@@ -7,3 +7,15 @@ Newly Use Repository
 - git push remote-_name branch_name
 
 Editing Repository
+
+Select untuk mengatur pilihan dalam <select> pasti ada <option>
+terkadang ada option yang bertuliskan select namun ketika diklik tidak ada pilihan itu, jadi kita harus mengosongkan valuenya dan memasukkan attribute hidden
+attribute required membuat suatu form harus diisi
+
+Note styling
+
+Inline > ID > Class > Element id lebih dari class jadi ketika kita menggunakan id active dengan class active maka yang didahulukan itu ID
+
+
+
+
