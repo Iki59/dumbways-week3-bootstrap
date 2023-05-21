@@ -1,0 +1,158 @@
+<html>
+    <head>
+        <title>My Project</title>
+        <link rel="icon" href="image/logo.png" type="image_icon">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/my-project.css" >
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li>
+                        <img src="image/logo.png" alt="Dumbways_logo" />
+                    </li>
+                     <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="active" href="#">My Project</a>
+                    </li>
+                 </ul>
+            </div>
+            <div class="nav-right">
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+
+        <div class="project">
+            <div class="project-form">
+                <div class="form-container">
+                    <form onsubmit="addProject(event)">
+                        <h1>Add My Project</h1>
+                        <div>
+                            <label for="input-project-title">Project Name</label>
+                            <input type="text" id="input-project-title" />
+                        </div>
+                        <div class="container-date">
+                        <div class="start-date">
+                            <label for="input-project-start-date">Start Date</label>
+                             <input
+                                type="text"
+                                id="input-project-start-date"
+                                onfocus="(this.type='date')"
+                            />
+                        </div>
+                        <div class="end-date">
+                            <label for="input-project-end-date">End Date</label>
+                            <input
+                             type="text"
+                            id="input-project-end-date"
+                            onfocus="(this.type='date')"
+                        />
+                        </div>
+                        </div>
+                        <div>
+                            <label for="input-project-content">Description</label>
+                            <textarea id="input-project-content"></textarea>
+                        </div>
+                        <!-- <div class="container-input-checkbox">
+                            <label>Technologies</label>
+                            <div class="input-checkbox">
+                              <div class="checkbox-one">
+                                <div class="input-java">
+                                  <input
+                                    type="checkbox"
+                                    id="tech1"
+                                    value="Java"
+                                    onclick="getClick(this.value)"
+                                  />
+                                </div>
+                                <div>
+                                  <label for="tech1" id="label-tech-1">Java</label>
+                                </div>
+                                <div class="input-python">
+                                  <input
+                                    type="checkbox"
+                                    id="tech2"
+                                    value="python"
+                                    onclick="getClick(this.value)"
+                                  />
+                                </div>
+                                <div>
+                                  <label for="tech2">Python</label>
+                                </div>
+                              </div>
+                              <div class="checkbox-two">
+                                <div class="input-javascript">
+                                  <input
+                                    type="checkbox"
+                                    id="tech3"
+                                    value="javascript"
+                                    onclick="getClick(this.value)"
+                                  />
+                                </div>
+                                <div>
+                                  <label for="tech3">Javascript</label>
+                                </div>
+                                <div class="input-typescript">
+                                  <input
+                                    type="checkbox"
+                                    class="test"
+                                    id="tech4"
+                                    value="TypeScript"
+                                    onclick="getClick(this.value)"
+                                  />
+                                </div>
+                                <div>
+                                  <label for="tech4">TypeScript</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div> -->
+                        <div>
+                            <label>Upload Image</label>
+                            <div class="input-project-image-group">
+                                <label for="input-project-image">
+                                    <p>attach files</p>
+                                    <img src="image/file.png" alt="file" />
+                                </label>
+                                <input type="file" id="input-project-image" hidden />
+                            </div>
+                        </div>
+                        <div class="button-group">
+                            <button>Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <hr class="line" />
+            <div id="contents" class="project-list">
+                <div class="project-list-item">
+                    <div class="project-image">
+                        <img src="image/apps.jpg" alt="apps" />
+                    </div>
+                    <div class="project-content">
+                        <div class="btn-group">
+                            <button class="btn-edit">Edit</button>
+                            <button class="btn-delete">Delete</button>
+                        </div>
+                        <h1>
+                            <a href="project-detail.html" target="_blank">Dumbways Mobile Apps 2022</a>
+                        </h1>
+
+                        <div class="detail-project-content">
+                            Durasi: 2 Bulan
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nam excepturi reprehenderit molestias vero laboriosam, accusamus aliquam? Voluptatem, libero consectetur quaerat aspernatur porro quidem error facere reprehenderit omnis earum nisi quos aperiam soluta vel tempora dignissimos possimus facilis quas, animi eaque nostrum suscipit perferendis optio ullam? Praesentium excepturi animi eius illum autem voluptates labore. Libero excepturi nisi ipsam veritatis est voluptatibus voluptates recusandae sapiente dolore distinctio!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/my-project.js"></script>
+    </body>
+</html>

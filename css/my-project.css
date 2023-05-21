@@ -1,0 +1,332 @@
+.project-form {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.project-form .form-container {
+    width: 500px;
+}
+
+.project-form .form-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project-form form label {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.container-date {
+    display: flex;
+}
+
+.start-date {
+    flex: 1;
+}
+
+.end-date {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.project-form form input, textarea {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    resize: none;
+}
+
+.project-form form textarea {
+    height: 150px;
+}
+/* kalau memanggil kelas disertai titik sebelum nama class */
+
+/* .checkbox-one { */
+    /* display: flex;
+    margin-top: 10px;
+    margin-left: -10px
+}
+
+.checkbox-one label {
+    padding: 8px;
+    line-height: 22px;
+    
+}
+
+.checkbox-two {
+    display: flex;
+    margin-top: 10px;
+    margin-left: -10px
+}
+
+.checkbox-two label {
+    padding: 8px;
+    line-height: 22px;
+    
+}
+
+.input-python {
+    margin-left: 66px;
+}
+
+.input-typescript {
+    margin-left: 10px; */
+/* } */
+
+.project-form form .input-project-image-group {
+    width: 97%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.project-form form .input-project-image-group label p {
+    font-size: 15px;
+}
+
+.project-form form .input-project-image-group label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-form form .button-group {
+    text-align: right;
+}
+
+.project-form form button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 17px;
+    background-color: #ec4d37;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.project .line {
+    border: 1px solid #dbdbdb;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* blog lis */
+
+.project .project-list {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.project .project-list .project-list-item {
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #dbdbdb;
+    border-radius: 8px;
+    display: flex;
+}
+
+.project .project-list .project-list-item .project-image {
+    flex: 1;
+}
+
+.project .project-list .project-list-item .project-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.project .project-list .project-list-item .project-content {
+    padding-left: 25px;
+    flex: 2;
+}
+/* flex diatas berarti flex 1 berbanding 2 1 pada blog image dan 2 pada blog content */
+
+.project .project-list .btn-group {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+ .project .project-list .btn-group .btn-delete {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background: #ec4d37;
+    color: white;
+ }
+
+ .project .project-list .btn-group .btn-edit {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background: #dbdbdb;
+ }
+
+.project .project-list h1 a {
+    text-decoration: none;
+    color: #000;
+}
+
+.project .project-list .detail-blog-content {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.project .project-list .project-list-item p {
+    margin-top: 20px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+/* project detail */
+
+.project-detail .project-detail-container h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.project-detail .project-detail-container .detail-content .content-primary {
+    display: grid;
+        grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px 20px 200px;
+    grid-gap: 50px;
+}
+
+.project-detail .project-detail-container .detail-content .content-primary .sider table {
+  margin-top: -130px;
+
+}
+
+table .test1, .test2, .test3, .test4, .test6 {
+    display: inline-block;
+    position: relative;
+    top: -3px;
+    margin-left: 10px;
+}
+
+table .test5 {
+    display: inline-block;
+    position: relative;
+    top: -3px;
+    left: 3px;
+    margin-left: 10px;
+}
+
+table i {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+table th {
+    text-align: left;
+}
+
+table td {
+    color: #888688;
+    font-weight: bold;
+}
+
+table .tanggal {
+    position: relative;
+    top: -20px;
+}
+
+table .durasi {
+    position: relative;
+    top: -10px;
+}
+
+table .baris1 {
+    display: flex;
+    margin-top: -15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+table .baris2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.project-detail {
+    display: flex;
+    justify-content: center;
+}
+
+.project-detail-container {
+    width: 80%;
+    margin: 40px 0;
+}
+
+.project-detail-container img {
+    width: 100%;
+}
+
+.project-detail-container h1{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 120%;
+    margin-bottom: 15px;
+}
+
+.project-detail-container p {
+    margin-top: 40px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: justify;
+}
+
+.project-detail .project-detail-container .detail-content .content-primary img {
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.project-detail .project-detail-container .detail-content p {
+    margin: 60px 198px 90px 198px;
+    text-align: justify;
+
+}
+
+.project-detail-container {
+    width: 100%;
+    margin: 40px 0;
+}
+
+.project-detail-container img {
+    width: 100%;
+}
+
+
+
+

@@ -5,7 +5,6 @@ Newly Use Repository
 - git commit -m "your messages" / untuk memberikan message terhadap folder/file yang kita tambah
 - git remote add remote_name https://remote.link
 - git push remote-_name branch_name
-
 Editing Repository
 
 Select untuk mengatur pilihan dalam <select> pasti ada <option>
