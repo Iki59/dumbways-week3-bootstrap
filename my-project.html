@@ -4,6 +4,9 @@
         <link rel="icon" href="image/logo.png" type="image_icon">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/my-project.css" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" >
     </head>
     <body>
         <nav>
@@ -56,60 +59,52 @@
                             <label for="input-project-content">Description</label>
                             <textarea id="input-project-content"></textarea>
                         </div>
-                        <!-- <div class="container-input-checkbox">
+                        <div class="container-input-checkbox">
                             <label>Technologies</label>
                             <div class="input-checkbox">
                               <div class="checkbox-one">
                                 <div class="input-java">
                                   <input
                                     type="checkbox"
-                                    id="tech1"
-                                    value="Java"
-                                    onclick="getClick(this.value)"
+                                    id="ini-java"
                                   />
                                 </div>
                                 <div>
-                                  <label for="tech1" id="label-tech-1">Java</label>
+                                  <label for="ini-java">Java</label>
                                 </div>
                                 <div class="input-python">
                                   <input
                                     type="checkbox"
-                                    id="tech2"
-                                    value="python"
-                                    onclick="getClick(this.value)"
+                                    id="ini-python"
                                   />
                                 </div>
                                 <div>
-                                  <label for="tech2">Python</label>
+                                  <label for="ini-python">Python</label>
                                 </div>
                               </div>
                               <div class="checkbox-two">
                                 <div class="input-javascript">
                                   <input
                                     type="checkbox"
-                                    id="tech3"
-                                    value="javascript"
-                                    onclick="getClick(this.value)"
+                                    id="ini-javascript"
                                   />
                                 </div>
                                 <div>
-                                  <label for="tech3">Javascript</label>
+                                  <label for="ini-javascript">Javascript</label>
                                 </div>
-                                <div class="input-typescript">
+                                <div class="input-php">
                                   <input
                                     type="checkbox"
                                     class="test"
-                                    id="tech4"
-                                    value="TypeScript"
-                                    onclick="getClick(this.value)"
+                                    id="ini-php"
                                   />
                                 </div>
                                 <div>
-                                  <label for="tech4">TypeScript</label>
+                                  <label for="ini-php">PHP</label>
                                 </div>
                               </div>
                             </div>
-                          </div> -->
+                          </div>
                         <div>
                             <label>Upload Image</label>
                             <div class="input-project-image-group">
@@ -128,30 +123,39 @@
             </div>
 
             <hr class="line" />
-            <div id="contents" class="project-list">
-                <div class="project-list-item">
-                    <div class="project-image">
-                        <img src="image/apps.jpg" alt="apps" />
-                    </div>
-                    <div class="project-content">
-                        <div class="btn-group">
-                            <button class="btn-edit">Edit</button>
-                            <button class="btn-delete">Delete</button>
-                        </div>
+          <section class="section-project">
+              <div id="contents">
+                  <div class="project-list-item">
+                      <div class="project-image">
+                          <img src="image/apps.jpg" alt="apps" />
+                      </div>
+                      <div class="project-content">
                         <h1>
-                            <a href="project-detail.html" target="_blank">Dumbways Mobile Apps 2022</a>
+                          <a href="project-detail.html" target="_blank">Dumbways Mobile Apps 2022</a>
                         </h1>
-
+                        
                         <div class="detail-project-content">
-                            Durasi: 2 Bulan
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nam excepturi reprehenderit molestias vero laboriosam, accusamus aliquam? Voluptatem, libero consectetur quaerat aspernatur porro quidem error facere reprehenderit omnis earum nisi quos aperiam soluta vel tempora dignissimos possimus facilis quas, animi eaque nostrum suscipit perferendis optio ullam? Praesentium excepturi animi eius illum autem voluptates labore. Libero excepturi nisi ipsam veritatis est voluptatibus voluptates recusandae sapiente dolore distinctio!
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                          Durasi: 2 Bulan
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nam excepturi reprehenderit molestias vero laboriosam, accusamus aliquam? 
+                          </p>
+                          <div class="tech-icon">
+                            <i class="fa-brands fa-java"></i>
+                            <i class="fa-brands fa-python"></i>
+                            <i class="fa-brands fa-square-js"></i>
+                            <i class="fa-brands fa-php"></i>
+                          </div>
+                          <div class="btn-group">
+                              <button class="btn-edit">Edit</button>
+                              <button class="btn-delete">Delete</button>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
             </div>
-        </div>
+          </section>
+          
 
         <script src="js/my-project.js"></script>
     </body>

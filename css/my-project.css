@@ -49,8 +49,8 @@
 }
 /* kalau memanggil kelas disertai titik sebelum nama class */
 
-/* .checkbox-one { */
-    /* display: flex;
+.checkbox-one {
+    display: flex;
     margin-top: 10px;
     margin-left: -10px
 }
@@ -74,12 +74,17 @@
 }
 
 .input-python {
-    margin-left: 66px;
+    margin-left: 80px;
 }
 
-.input-typescript {
-    margin-left: 10px; */
-/* } */
+.input-php {
+    margin-left: 25px;
+}
+
+.input-python label {
+    font-size: 100px;
+}
+
 
 .project-form form .input-project-image-group {
     width: 97%;
@@ -107,6 +112,8 @@
 
 .project-form form .button-group {
     text-align: right;
+    display: flex;
+    justify-content: end;
 }
 
 .project-form form button {
@@ -129,44 +136,33 @@
 
 /* blog lis */
 
-.project .project-list {
-    margin-top: 80px;
-    margin-bottom: 80px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+#contents {
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
-.project .project-list .project-list-item {
-    width: 80%;
-    padding: 15px;
-    margin-bottom: 20px;
-    border: 2px solid #dbdbdb;
-    border-radius: 8px;
-    display: flex;
+.project-list-item {
+    width: 300px;
+    box-shadow: 2px 2px 2px 2px #ddd;
+    margin: 30px 20px 30px 80px;
+    padding: 10px;
+    border-radius: 10px;
 }
 
-.project .project-list .project-list-item .project-image {
-    flex: 1;
-}
-
-.project .project-list .project-list-item .project-image img {
+.project-list-item .project-image img {
     width: 100%;
-    height: 300px;
     object-fit: cover;
 }
 
-.project .project-list .project-list-item .project-content {
-    padding-left: 25px;
-    flex: 2;
+.project-list-item .project-content {
+    padding: 10px;
 }
 /* flex diatas berarti flex 1 berbanding 2 1 pada blog image dan 2 pada blog content */
 
-.project .project-list .btn-group {
-    text-align: right;
-    margin-bottom: 20px;
+.project-list-item .btn-group {
+    margin-bottom: 10px;
 }
 
- .project .project-list .btn-group .btn-delete {
+ .project-list-item .btn-group .btn-delete {
     padding: 5px 10px;
     border: none;
     border-radius: 4px;
@@ -174,30 +170,35 @@
     color: white;
  }
 
- .project .project-list .btn-group .btn-edit {
+ .project-list-item .btn-group .btn-edit {
     padding: 5px 10px;
     border: none;
     border-radius: 4px;
     background: #dbdbdb;
  }
 
-.project .project-list h1 a {
+.project-list-item h1 a {
     text-decoration: none;
     color: #000;
 }
 
-.project .project-list .detail-blog-content {
+.project-list-item .detail-blog-content {
     font-weight: 300;
     font-size: 12px;
     line-height: 20px;
 }
 
-.project .project-list .project-list-item p {
+.project-list-item p {
     margin-top: 20px;
     font-weight: normal;
     font-size: 14px;
     line-height: 20px;
     text-align: justify;
+}
+
+.tech-icon {
+    margin-bottom: 10px;
+    font-size: 30px;
 }
 
 /* project detail */
@@ -210,7 +211,7 @@
 
 .project-detail .project-detail-container .detail-content .content-primary {
     display: grid;
-        grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
     justify-content: center;
     align-items: center;
     margin: 50px 0px 20px 200px;
