@@ -72,20 +72,16 @@ function addProject(event) {
     let distance = endDate - startDate; // hasilnya milidetik
     console.log(distance);
   
-    let milisecond = 1000; // milisecond
-    let secondInHours = 3600; // 1 jam 3600 detik
-    let hoursInDays = 24; // 1 hari 24 jam
-    let daysInMonth = 30; // 30 hari sebulan
-    let monthInYear = 12; // 12 bulan setahun
-    let distanceDay = Math.floor(
-      distance / (milisecond * secondInHours * hoursInDays)
+    let milisecond = 1000;
+    let secondInHours = 3600; 
+    let hoursInDays = 24; 
+    let daysInMonth = 30; 
+    let monthInYear = 12; 
+    let distanceDay = Math.floor(distance / (milisecond * secondInHours * hoursInDays)
     ); 
-    let distanceMonth = Math.floor(
-      distance / (milisecond * secondInHours * hoursInDays * daysInMonth)
+    let distanceMonth = Math.floor(distance / (milisecond * secondInHours * hoursInDays * daysInMonth)
     );
-    let distanceYear = Math.floor(
-      distance /
-        (milisecond * secondInHours * hoursInDays * daysInMonth * monthInYear)
+    let distanceYear = Math.floor(distance /(milisecond * secondInHours * hoursInDays * daysInMonth * monthInYear)
     );
 
     if (distanceYear > 0) {
@@ -100,15 +96,15 @@ function addProject(event) {
     let durasi = getDifferenceTime();
     
     // checkbox tech
-    // const javaIcon = '<i class="fa-brands.fa-java"></i>';
-    // const javascriptIcon = '<i class="fa-brands.fa-python"></i>';
-    // const pythonIcon = '<i class="fa-brands.fa-square-js"></i>';
-    // const phpIcon = '<i class="fa-brands.fa-php"></i>';
+    const javaIcon = '<i class="fa-brands fa-java"></i>';
+    const javascriptIcon = '<i class="fa-brands fa-python"></i>';
+    const pythonIcon = '<i class="fa-brands fa-square-js"></i>';
+    const phpIcon = '<i class="fa-brands fa-php"></i>';
 
-    // let checkboxJava = documents.getElementById("input-java").checked ? javaIcon: "";
-    // let checkboxJavascript = documents.getElementById("input-javascript").checked ? javascriptIcon: "";
-    // let checkboxPython = documents.getElementById("input-python").checked ? pythonIcon: "";
-    // let checkboxPhp = documents.getElementById("input-php").checked ? phpIcon: "";
+    let checkboxJava = document.getElementById("ini-java").checked ? javaIcon : "";
+    let checkboxJavascript = document.getElementById("ini-javascript").checked ? javascriptIcon : "";
+    let checkboxPython = document.getElementById("ini-python").checked ? pythonIcon : "";
+    let checkboxPhp = document.getElementById("ini-php").checked ? phpIcon: "";
 
     // untuk membuat url gambar agar tampil
     image = URL.createObjectURL(image[0]);
@@ -121,10 +117,10 @@ function addProject(event) {
         durasi,
         description,
         image,
-        // checkboxJava,
-        // checkboxJavascript,
-        // checkboxPython,
-        // checkboxPhp,
+        checkboxJava,
+        checkboxJavascript,
+        checkboxPython,
+        checkboxPhp,
         postAt: new Date(),
         author: "Muhammad Rizki B",
     }
@@ -136,14 +132,12 @@ function addProject(event) {
 }
 
 function renderProject() {
-    document.getElementById("contents").innerHTML = "";
+    document.getElementById("gridd").innerHTML = "";
     for (let index = 0; index < dataProject.length; index++)
-    document.getElementById("contents").innerHTML += `
+    document.getElementById("gridd").innerHTML += `
 
-    <div class="project-list-item">
-    <div class="project-image">
-        <img src="${dataProject[index].image}" alt="apps" />
-    </div>
+    <article>
+    <img class="project-image" src="${dataProject[index].image}" alt="apps" />
     <div class="project-content">
     <h1>
     <a href="project-detail.html" target="_blank">
@@ -158,10 +152,10 @@ function renderProject() {
         ${dataProject[index]. description}
         </p>
         <div class="tech-icon">
-        <i class="fa-brands fa-java"></i>
-        <i class="fa-brands fa-python"></i>
-        <i class="fa-brands fa-square-js"></i>
-        <i class="fa-brands fa-php"></i>
+        ${dataProject[index].checkboxJava}
+        ${dataProject[index].checkboxJavascript}
+        ${dataProject[index].checkboxPython}
+        ${dataProject[index].checkboxPhp}
       </div>
         <div class="btn-group">
             <button class="btn-edit">Edit</button>
@@ -173,7 +167,8 @@ function renderProject() {
     </div>
     </div>
     </div>
-    </div>
+    </article>
+    </main>
 `
 }
 // untuk menambah interval
@@ -250,7 +245,7 @@ function getDistanceTime(time) {
         }
 }
 
-setInterval(function () {
-    renderProject();
-}, 10000);
+// setInterval(function () {
+//     renderProject();
+// }, 10000);
 

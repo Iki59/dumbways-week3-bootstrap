@@ -9,24 +9,37 @@
         referrerpolicy="no-referrer" >
     </head>
     <body>
-        <nav>
-            <div class="nav-left">
-                <ul>
-                    <li>
-                        <img src="image/logo.png" alt="Dumbways_logo" />
-                    </li>
-                     <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a class="active" href="#">My Project</a>
-                    </li>
-                 </ul>
-            </div>
-            <div class="nav-right">
-                <a href="contact.html">Contact</a>
-            </div>
-        </nav>
+      <nav>
+        <div class="nav-left">
+            <ul>
+                <li>
+                    <img src="image/logo.png" alt="Dumbways_logo" />
+                </li>
+                 <li class="item-collapse">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="item-collapse">
+                    <a class="active" href="my-project.html">My Project</a>
+                </li>
+             </ul>
+        </div>
+        <div class="nav-right item-collapse">
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-right" id="barsmenu">
+            <button style="background-color: transparent; border: none; cursor: pointer;"
+            onclick="openHamburger()"
+            >
+                <i class="fa-2x fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+        <a href="index.html">Home</a>
+        <a href="my-project.html" class="hamburger-active">My Project</a>
+        <a href="contact.html">Contact</a>
+      </div>
 
         <div class="project">
             <div class="project-form">
@@ -122,41 +135,159 @@
                 </div>
             </div>
 
-            <hr class="line" />
-          <section class="section-project">
-              <div id="contents">
+              <div id="contents" class="section-project">
                   <div class="project-list-item">
-                      <div class="project-image">
-                          <img src="image/apps.jpg" alt="apps" />
-                      </div>
-                      <div class="project-content">
-                        <h1>
-                          <a href="project-detail.html" target="_blank">Dumbways Mobile Apps 2022</a>
-                        </h1>
-                        
-                        <div class="detail-project-content">
-                          Durasi: 2 Bulan
-                          <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nam excepturi reprehenderit molestias vero laboriosam, accusamus aliquam? 
-                          </p>
-                          <div class="tech-icon">
-                            <i class="fa-brands fa-java"></i>
-                            <i class="fa-brands fa-python"></i>
-                            <i class="fa-brands fa-square-js"></i>
-                            <i class="fa-brands fa-php"></i>
+                    <main class="grid" id="gridd">
+                      <article>
+                            <img class="project-image" src="image/apps.jpg" alt="apps" />
+                        <div class="project-content">
+                          <h1>
+                            <a href="project-detail.html" target="_blank">Dumbways Mobile Apps 2022</a>
+                          </h1>
+                        </div>
+                          <div class="detail-project-content">
+                            Durasi: 2 Bulan
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nam excepturi reprehenderit molestias vero laboriosam, accusamus aliquam? 
+                            </p>
                           </div>
-                          <div class="btn-group">
-                              <button class="btn-edit">Edit</button>
-                              <button class="btn-delete">Delete</button>
-                          </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-            </div>
-          </section>
-          
+                            <div class="tech-icon">
+                              <i class="fa-brands fa-java"></i>
+                              <i class="fa-brands fa-python"></i>
+                              <i class="fa-brands fa-square-js"></i>
+                              <i class="fa-brands fa-php"></i>
+                            </div>
+                            <div class="btn-group">
+                                <button class="btn-edit">Edit</button>
+                                <button class="btn-delete">Delete</button>
+                      </article>
 
+                      <article>
+                          <img class="project-image" src="image/apps.jpg" alt="apps" />
+                        <div class="project-content">
+                          <h1>
+                            <a href="project-detail.html" target="_blank">Dumbways Mobile Apps 2022</a>
+                          </h1>
+                        </div>
+                          <div class="detail-project-content">
+                            Durasi: 2 Bulan
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nam excepturi reprehenderit molestias vero laboriosam, accusamus aliquam? 
+                            </p>
+                          </div>
+                            <div class="tech-icon">
+                              <i class="fa-brands fa-java"></i>
+                              <i class="fa-brands fa-python"></i>
+                              <i class="fa-brands fa-square-js"></i>
+                              <i class="fa-brands fa-php"></i>
+                            </div>
+                            <div class="btn-group">
+                                <button class="btn-edit">Edit</button>
+                                <button class="btn-delete">Delete</button>
+                      </article>
+
+                      <article>
+                          <img class="project-image" src="image/apps.jpg" alt="apps" />
+                        <div class="project-content">
+                          <h1>
+                            <a href="project-detail.html" target="_blank">Dumbways Mobile Apps 2022</a>
+                          </h1>
+                        </div>
+                          <div class="detail-project-content">
+                            Durasi: 2 Bulan
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nam excepturi reprehenderit molestias vero laboriosam, accusamus aliquam? 
+                            </p>
+                          </div>
+                            <div class="tech-icon">
+                              <i class="fa-brands fa-java"></i>
+                              <i class="fa-brands fa-python"></i>
+                              <i class="fa-brands fa-square-js"></i>
+                              <i class="fa-brands fa-php"></i>
+                            </div>
+                            <div class="btn-group">
+                                <button class="btn-edit">Edit</button>
+                                <button class="btn-delete">Delete</button>
+                      </article>
+
+                      <article>
+                          <img class="project-image" src="image/apps.jpg" alt="apps" />
+                        <div class="project-content">
+                          <h1>
+                            <a href="project-detail.html" target="_blank">Dumbways Mobile Apps 2022</a>
+                          </h1>
+                        </div>
+                          <div class="detail-project-content">
+                            Durasi: 2 Bulan
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nam excepturi reprehenderit molestias vero laboriosam, accusamus aliquam? 
+                            </p>
+                          </div>
+                            <div class="tech-icon">
+                              <i class="fa-brands fa-java"></i>
+                              <i class="fa-brands fa-python"></i>
+                              <i class="fa-brands fa-square-js"></i>
+                              <i class="fa-brands fa-php"></i>
+                            </div>
+                            <div class="btn-group">
+                                <button class="btn-edit">Edit</button>
+                                <button class="btn-delete">Delete</button>
+                      </article>
+
+                      <article>
+                          <img class="project-image" src="image/apps.jpg" alt="apps" />
+                        <div class="project-content">
+                          <h1>
+                            <a href="project-detail.html" target="_blank">Dumbways Mobile Apps 2022</a>
+                          </h1>
+                        </div>
+                          <div class="detail-project-content">
+                            Durasi: 2 Bulan
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nam excepturi reprehenderit molestias vero laboriosam, accusamus aliquam? 
+                            </p>
+                          </div>
+                            <div class="tech-icon">
+                              <i class="fa-brands fa-java"></i>
+                              <i class="fa-brands fa-python"></i>
+                              <i class="fa-brands fa-square-js"></i>
+                              <i class="fa-brands fa-php"></i>
+                            </div>
+                            <div class="btn-group">
+                                <button class="btn-edit">Edit</button>
+                                <button class="btn-delete">Delete</button>
+                      </article>
+
+                      <article>
+                          <img class="project-image" src="image/apps.jpg" alt="apps" />
+                        <div class="project-content">
+                          <h1>
+                            <a href="project-detail.html" target="_blank">Dumbways Mobile Apps 2022</a>
+                          </h1>
+                        </div>
+                          <div class="detail-project-content">
+                            Durasi: 2 Bulan
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nam excepturi reprehenderit molestias vero laboriosam, accusamus aliquam? 
+                            </p>
+                          </div>
+                            <div class="tech-icon">
+                              <i class="fa-brands fa-java"></i>
+                              <i class="fa-brands fa-python"></i>
+                              <i class="fa-brands fa-square-js"></i>
+                              <i class="fa-brands fa-php"></i>
+                            </div>
+                            <div class="btn-group">
+                                <button class="btn-edit">Edit</button>
+                                <button class="btn-delete">Delete</button>
+                      </article>
+
+                    </main>
+                          </div>
+                          </div>
+                          
         <script src="js/my-project.js"></script>
+        <script src="js/index.js"></script>
+    </body>
     </body>
 </html>

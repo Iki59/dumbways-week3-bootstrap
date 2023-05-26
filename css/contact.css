@@ -43,3 +43,33 @@ button {
 button:hover {
     background-color: black
 }
+
+@media only screen and (max-width: 1100px) {
+    .contact-me {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 0%;
+    }
+    .nav-right button i {
+        margin-right: -20px;
+        margin-bottom: 20px;
+        font-size: 28px;
+    }
+
+    .contact-me .container-contact {
+        flex: 100%;
+        margin-top: -50px;
+        margin-right: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-me .container-contact form {
+        width: 100%;
+        height: auto;
+        margin-left: 200px;
+    }
+
+  
+}

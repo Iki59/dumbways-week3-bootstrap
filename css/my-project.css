@@ -49,6 +49,10 @@
 }
 /* kalau memanggil kelas disertai titik sebelum nama class */
 
+.container-input-checkbox .input-checkbox {
+    margin-left: 10px;
+}
+
 .checkbox-one {
     display: flex;
     margin-top: 10px;
@@ -127,54 +131,65 @@
     cursor: pointer;
 }
 
-.project .line {
-    border: 1px solid #dbdbdb;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 /* blog lis */
 
 #contents {
     display: grid;
     grid-template-columns: auto auto auto;
+    
 }
-.project-list-item {
+
+.section-project {
+    background-color: #fff;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3,0fr);
+    margin: 50px 0px 20px 170px;
+    align-items: center;
+    grid-gap: 20px;
+}
+
+.grid article {
     width: 300px;
     box-shadow: 2px 2px 2px 2px #ddd;
-    margin: 30px 20px 30px 80px;
+    align-items: center;
     padding: 10px;
     border-radius: 10px;
 }
 
-.project-list-item .project-image img {
+
+.section-project .project-list-item .grid article .project-image {
     width: 100%;
     object-fit: cover;
 }
 
-.project-list-item .project-content {
-    padding: 10px;
-}
 /* flex diatas berarti flex 1 berbanding 2 1 pada blog image dan 2 pada blog content */
 
 .project-list-item .btn-group {
+    display: flex;
     margin-bottom: 10px;
+    justify-content: center;
 }
 
  .project-list-item .btn-group .btn-delete {
+    flex: 50%;
     padding: 5px 10px;
     border: none;
     border-radius: 4px;
-    background: #ec4d37;
+    background: #1E3050;
     color: white;
+    margin-left: 8px;
  }
 
  .project-list-item .btn-group .btn-edit {
+    flex: 50%;
     padding: 5px 10px;
     border: none;
+    background: #1E3050;
+    color: white;
     border-radius: 4px;
-    background: #dbdbdb;
  }
 
 .project-list-item h1 a {
@@ -182,10 +197,9 @@
     color: #000;
 }
 
-.project-list-item .detail-blog-content {
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 20px;
+.project-list-item .project-content h1 {
+    
+    font-size: 25px;
 }
 
 .project-list-item p {
@@ -200,6 +214,10 @@
     margin-bottom: 10px;
     font-size: 30px;
 }
+
+
+
+
 
 /* project detail */
 
@@ -262,20 +280,6 @@ table .durasi {
     top: -10px;
 }
 
-table .baris1 {
-    display: flex;
-    margin-top: -15px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-table .baris2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
 .project-detail {
     display: flex;
     justify-content: center;
@@ -324,10 +328,91 @@ table .baris2 {
     margin: 40px 0;
 }
 
-.project-detail-container img {
-    width: 100%;
+@media only screen and (max-width: 1100px) {
+    .project {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-form .form-container {
+        padding: 20px;
+        margin-top: -50px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2,0fr);
+        margin: 20px 5px 20px 25px;
+        align-items: center;
+        grid-gap: 15px;
+    }
+
+    .grid article {
+        width: 150px;
+    }
+
+    .project-content h1 a {
+        font-size: 20px;
+    }
+
+    .detail-project-content {
+        margin-top: -10px;
+    }
+
+    .detail-project-content p {
+        font-size: 12px;
+        margin-top: 8px;
+    }
+    .tech-icon {
+        font-size: 20px;
+    }
+
+    .project-list-item .btn-group .btn-delete {
+        font-size: 10px;
+        padding: 5px 10px;
+       
+     }
+    
+     .project-list-item .btn-group .btn-edit {
+        font-size: 10px;
+        padding: 5px 10px;
+     }
+
+     .project-detail .project-detail-container .detail-content .content-primary {
+        grid-template-columns: repeat (1,1fr);
+        margin: 50px 0px 20px 40px;
+        grid-gap: 170px;
+     }
+
+     .detail-content .content-primary img{
+        width: 345px;
+        height: 200px;
+     }
+
+     .project-detail .project-detail-container .detail-content p {
+        margin: 60px 10px 90px 12px;
+        width: 340px;
+        text-align: justify;
+
+    }
+
+    .project-detail-container {
+        width: 90%;
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    .project-detail-container img {
+        text-align: center;
+    }
+
+    .project-detail .project-detail-container h1 {
+        text-align: center;
+        font-size: 20px;
+        margin-left: 45px;
+        margin-right: 0px;
+        margin-bottom: 50px;
+        font-weight: bold;
+    }
+    
 }
-
-
-
-

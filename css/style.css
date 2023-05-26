@@ -9,6 +9,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: rgba(51, 93, 121, 0.493);
 
 }
 
@@ -31,54 +32,92 @@ nav ul li {
 }
 
 nav ul li a {
-    color: black
+    color: black;
+    font-weight: 600;
 }
 
 nav ul li .active {
-    color: orangered;
+    color: #1E3050;
 }
 
 .nav-left {
-    flex: 50%;
+    flex: 80%;
     /* mengatur lebarnya */
 }
 
 .nav-right {
-    flex: 50%;
+    flex: 20%;
     text-align: end;
     margin-right: 25px;
 }
 
 .nav-right a {
-    background-color: orangered;
+    background-color: #1E3050;
     padding: 8px 20px;
     color: white;
     border-radius: 5px;
 }
 
 .container{
+    width: 1100px;
+    margin: 90px auto;
+    padding: 0px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #cecece;
     display: flex;
     justify-content: center;
-    height: 120vh;
-    align-items: center; 
+    align-items: center;
+    margin-top: 60px;
 }
 
 section{
     display: flex;
-    width: 80%;
+    width: 90%;
+    padding: 20px;
 }
 
 .left {
-    flex: 30%;
+    flex: 65%;
+    margin-right: 40px;
 }
 
 .right {
-    flex: 70%;
-    margin-left: 50px;
+    flex: 35%;
 }
 
-.right h2 {
-    color: orangered;
+.contact-cv {
+    display: flex;
+    margin-top: 30px;
+}
+
+.contact-button button{
+    background-color: #1E3050;
+    padding: 5px 20px;
+    border: 0px;
+    border-radius: 20px;
+}
+
+.cv-button {
+    margin-top: -15px;
+    margin-left: 20px;
+}
+
+.card-me {
+    width: 300px;
+    border: 1px solid #dbdbdb;
+    margin: 30px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #cecece;
+}
+
+.right img {
+    width: 100%;
+    border-radius: 5px
+}
+
+.left h2 {
+    color: #1E3050;
     margin-top: none;
 }
 
@@ -107,4 +146,105 @@ section{
     margin-right: 15px;
     font-size: 30px;
     cursor: pointer;
+}
+
+#barsmenu {
+    display: none;
+}
+
+.hamburger-nav-container {
+    font-size: 25px;
+    list-style-type: none;
+    display: none;
+}
+
+.hamburger-nav-container a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #9a9a9a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #fff;
+}
+
+.hamburger-nav-container .hamburger-active {
+    text-decoration: none;
+    color: #fff;
+    background-color: orangered;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #fff;
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+        margin: 0;
+        padding-right: none;
+    }
+    .card-container {
+        width: 100%;
+    }
+
+    .container {
+        width: 90%;
+        
+    }
+
+    .left {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 100%;
+        margin: 90px 0px 50px 0px;
+        padding: 10px;
+        
+    }
+
+    .right {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        flex: 100%;
+    }
+
+    .skill h2 {
+        margin-right: 5px;
+    }
+
+    #barsmenu {
+        display: block;
+    }
+
+    nav {
+        height: 8vh;
+    }
+
+    .item-collapse {
+        font-size: 18px;
+        margin-left: -10px;
+    }
+
+    .nav-left img {
+        margin-left: -15px;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    section {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -120px;
+    }
+
+    .card-me {
+        width: 250px;
+        margin-top: -10px;
+    }
+
 }
