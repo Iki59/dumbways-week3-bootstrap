@@ -24,7 +24,7 @@
              </ul>
         </div>
         <div class="nav-right item-collapse">
-            <a href="contact.html">Contact</a>
+            <a href="contact.html">Contact Me</a>
         </div>
         <div class="nav-right" id="barsmenu">
             <button style="background-color: transparent; border: none; cursor: pointer;"
@@ -38,7 +38,13 @@
     <div class="hamburger-nav-container" id="hamburger-nav-container">
         <a href="index.html">Home</a>
         <a href="my-project.html" class="hamburger-active">My Project</a>
-        <a href="contact.html">Contact</a>
+        <div class="hamburger-contact">
+          <a href="contact.html">
+              <p>
+                  Contact
+              </p>
+          </a>
+      </div>
       </div>
 
         <div class="project">
@@ -47,12 +53,12 @@
                     <form onsubmit="addProject(event)">
                         <h1>Add My Project</h1>
                         <div>
-                            <label for="input-project-title">Project Name</label>
+                            <label for="input-project-title" style="font-weight: bold">Project Name</label>
                             <input type="text" id="input-project-title" />
                         </div>
                         <div class="container-date">
                         <div class="start-date">
-                            <label for="input-project-start-date">Start Date</label>
+                            <label for="input-project-start-date" style="font-weight: bold">Start Date</label>
                              <input
                                 type="text"
                                 id="input-project-start-date"
@@ -60,7 +66,7 @@
                             />
                         </div>
                         <div class="end-date">
-                            <label for="input-project-end-date">End Date</label>
+                            <label for="input-project-end-date" style="font-weight: bold">End Date</label>
                             <input
                              type="text"
                             id="input-project-end-date"
@@ -69,11 +75,11 @@
                         </div>
                         </div>
                         <div>
-                            <label for="input-project-content">Description</label>
+                            <label for="input-project-content" style="font-weight: bold">Description</label>
                             <textarea id="input-project-content"></textarea>
                         </div>
                         <div class="container-input-checkbox">
-                            <label>Technologies</label>
+                            <label style="font-weight: bold">Technologies</label>
                             <div class="input-checkbox">
                               <div class="checkbox-one">
                                 <div class="input-java">
@@ -119,7 +125,7 @@
                             </div>
                           </div>
                         <div>
-                            <label>Upload Image</label>
+                            <label style="font-weight: bold">Upload Image</label>
                             <div class="input-project-image-group">
                                 <label for="input-project-image">
                                     <p>attach files</p>

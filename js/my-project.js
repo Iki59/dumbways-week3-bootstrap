@@ -245,7 +245,7 @@ function getDistanceTime(time) {
         }
 }
 
-// setInterval(function () {
-//     renderProject();
-// }, 10000);
+setInterval(function () {
+    renderProject();
+}, 10000);
 

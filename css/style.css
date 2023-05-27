@@ -160,31 +160,58 @@ section{
 
 .hamburger-nav-container a {
     text-decoration: none;
-    color: #fff;
-    background-color: #9a9a9a;
+    color: black;
+    font-weight: bold;
+    background-color: #d3d3d3;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
-    border: 1px solid #fff;
+    border: 0px;
+}
+
+.hamburger-nav-container .hamburger-contact a p {
+    background-color:#1E3050;
+    border-radius: 15px;
+    color: #fff;
+    margin: auto;
+    padding: 1px 22px;
+    
 }
 
 .hamburger-nav-container .hamburger-active {
     text-decoration: none;
     color: #fff;
-    background-color: orangered;
+    background-color: #1E3050;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
-    border: 1px solid #fff;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 900px) {
     body {
         margin: 0;
         padding-right: none;
     }
+
+    nav {
+        height: 8vh;
+    }
+    
+    nav ul li {
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+    nav ul li a {
+        font-size: 25px;
+    }
+
+    nav ul li img {
+        width: 60px;
+    }
+
     .card-container {
         width: 100%;
     }
@@ -215,14 +242,6 @@ section{
         margin-right: 5px;
     }
 
-    #barsmenu {
-        display: block;
-    }
-
-    nav {
-        height: 8vh;
-    }
-
     .item-collapse {
         font-size: 18px;
         margin-left: -10px;
@@ -230,10 +249,6 @@ section{
 
     .nav-left img {
         margin-left: -15px;
-    }
-
-    .nav-right {
-        display: none;
     }
 
     section {
@@ -246,5 +261,50 @@ section{
         width: 250px;
         margin-top: -10px;
     }
+}
 
+
+@media only screen and (max-width: 720px) {
+    #barsmenu {
+        display: block;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .nav-left .item-collapse {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #barsmenu {
+        display: block;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    nav {
+        height: 9vh;
+    }
+
+    .nav-left .item-collapse {
+        display: none;
+    }
+
+    nav ul li {
+        margin-left: -5px;
+        margin-top: 5px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    nav ul li img {
+        width: 50px;
+    }
 }

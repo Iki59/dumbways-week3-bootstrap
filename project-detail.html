@@ -2,7 +2,7 @@
     <head>
         <title>Project</title>
         <link rel="icon" href="image/logo.png" type="image_icon">
-        <link rel="stylesheet" href="css/my-project.css" />
+        <link rel="stylesheet" href="css/project-detail.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         crossorigin="anonymous"
@@ -24,7 +24,7 @@
              </ul>
         </div>
         <div class="nav-right item-collapse">
-            <a href="contact.html">Contact</a>
+            <a href="contact.html">Contact Me</a>
         </div>
         <div class="nav-right" id="barsmenu">
             <button style="background-color: transparent; border: none; cursor: pointer;"
@@ -38,39 +38,66 @@
     <div class="hamburger-nav-container" id="hamburger-nav-container">
         <a href="index.html" class="hamburger-active">Home</a>
         <a href="my-project.html">My Project</a>
-        <a href="contact.html">Contact</a>
+        <div class="hamburger-contact">
+          <a href="contact.html">
+              <p>
+                  Contact
+              </p>
+          </a>
+      </div>
       </div>
 
+      <h1>Dumbways Mobile App</h1>
         <div class="project-detail">
-            <div class="project-detail-container">
-              <h1>Dumbways Mobile App</h1>
-              <div class="detail-content">
-                <div class="content-primary">
-                  <img src="image/apps.jpg" alt="apps" />
-                  <div class="sider">
-                    <table>
-                      <tr>
-                        <th><h2>Durasi</h2></th>
-                      </tr>
-                      <tr>
-                        <td class="tanggal">
-                          <i
-                            class="fa-regular fa-calendar-days"
-                            style="color: #000000"
-                          ></i>
-                          <div class="test1">1 Jan 2023 - 1 Maret 2022</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="durasi">
-                          <i class="fa-regular fa-clock" style="color: #000000"></i>
-                          <div class="test2">2 Bulan</div>
-                        </td>
-                      </tr>
-                      </tr>
-                    </table>
+          <div class="project-detail-container">
+            <div class="content-left">
+              <img src="image/apps.jpg" alt="apps" />
+            </div>
+                <div class="content-right">
+                  <div class="time-project">
+                    <h2>Duration</h2>
+                    <div class="date">
+                      <i class="fa-regular fa-calendar-days" style="color: #000000"></i>
+                      <h3>
+                        1 Jan 2023 - 1 Maret 2022
+                      </h3>
+                    </div>
+                    <div class="duration">
+                      <i class="fa-regular fa-clock" style="color: #000000"></i>
+                      <h3>
+                        3 Bulan
+                      </h3>
+                    </div>
                   </div>
+                  <div class="project-tech">
+                    <h2>Technologies</h2>
+                    <div class="tech-top">
+                      <div class="java-tech">
+                        <i class="fa-brands fa-java"></i>
+                        <h3>Java</h3>
+                      </div>
+                      <div class="python-tech">
+                        <i class="fa-brands fa-python"></i>
+                        <h3>Python</h3>
+                      </div>
+                    </div>
+                    <div class="tech-bottom">
+                      <div class="js-tech">
+                        <i class="fa-brands fa-square-js"></i>
+                        <h3>Javascript</h3>
+                      </div>
+                      <div class="php-tech">
+                        <i class="fa-brands fa-php"></i>
+                        <h3>PHP</h3>
+                      </div>
+
+                    </div>
+                  </div>
+
+
                 </div>
+          </div>
+        </div>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nam
                   excepturi reprehenderit molestias vero laboriosam, accusamus
@@ -109,18 +136,6 @@
                   sit quibusdam, ipsum autem mollitia? Quae fugit laboriosam cum
                   numquam perferendis aperiam laudantium et vitae. <br />
                 </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="ini-coba">
-            <div class="coba-left">
-              <p>Ini kan coba-coba</p>
-            </div>
-            <div class="coba-right">
-              <p>Ini juga ya</p>
-            </div>
-          </div>
       <script src="js/index.js"></script>
     </body>
 </html>

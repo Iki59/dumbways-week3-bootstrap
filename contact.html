@@ -24,7 +24,7 @@
                  </ul>
             </div>
             <div class="nav-right item-collapse">
-                <a href="contact.html">Contact</a>
+                <a href="contact.html">Contact Me</a>
             </div>
             <div class="nav-right" id="barsmenu">
                 <button style="background-color: transparent; border: none; cursor: pointer;"
@@ -38,7 +38,13 @@
         <div class="hamburger-nav-container" id="hamburger-nav-container">
             <a href="index.html">Home</a>
             <a href="my-project.html">My Project</a>
-            <a href="contact.html" class="hamburger-active">Contact</a>
+            <div class="hamburger-contact">
+                <a href="contact.html">
+                    <p>
+                        Contact
+                    </p>
+                </a>
+            </div>
           </div>
         
         <div class="contact-me">
@@ -67,8 +73,10 @@
                 <div>
                     <label for="input-message">Input Message</label>
                     <textarea id="input-message" rows="5" cols="10"></textarea>
-                </div>    
-                    <button type="button" onclick="submitData()">submit</button>
+                </div>
+                <div class="button-container">
+                    <button type="button" onclick="submitData()">Submit</button>
+                </div>  
                 </form>
             </div>
         </div>
