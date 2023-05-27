@@ -287,6 +287,10 @@ section{
         display: none;
     }
 
+    .nav-right {
+        margin-right: 10px;
+    }
+
     nav {
         height: 9vh;
     }
