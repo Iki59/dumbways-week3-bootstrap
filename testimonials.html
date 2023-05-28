@@ -1,13 +1,15 @@
 <html>
     <head>
-        <title>Contact Me</title>
+        <title>Testimonials</title>
         <link rel="icon" href="image/logo.png" type="image_icon">
-        <link rel="stylesheet" href="css/contact.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/testimonials.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         crossorigin="anonymous"
         referrerpolicy="no-referrer" >
+
     </head>
+
     <body>
         <nav>
             <div class="nav-left">
@@ -22,7 +24,7 @@
                         <a href="my-project.html">My Project</a>
                     </li>
                     <li class="item-collapse">
-                        <a href="testimonials.html">Testimonials</a>
+                        <a class="active" href="testimonials.html">Testimonials</a>
                     </li>
                  </ul>
             </div>
@@ -37,11 +39,10 @@
                 </button>
             </div>
         </nav>
-
         <div class="hamburger-nav-container" id="hamburger-nav-container">
             <a href="index.html">Home</a>
             <a href="my-project.html">My Project</a>
-            <a href="testimonials.html">Testimonials</a>
+            <a href="testimonials.html" class="hamburger-active">Testimonials</a>
             <div class="hamburger-contact">
                 <a href="contact.html">
                     <p>
@@ -50,42 +51,36 @@
                 </a>
             </div>
           </div>
+    
         
-        <div class="contact-me">
-            <div class="container-contact">
-                <form>
-                <div>
-                    <label for="input-name">Name</label>
-                    <input id="input-name" type="text" required />
+          <div class="container-testi">
+            <h1>
+                My Testimonials
+            </h1>
+            <section class="testi" id="testi">
+                <!-- <div class="testi-card">
+                    <img src="image/shelby.jpg" alt="shelby" />
+                    <p class="quote-testi">Wah Bagus Sekali!!!</p>
+                    <p class="author-testi">Muhammad Rizki B</p>
                 </div>
-                <div>
-                    <label for="input-email">Email</label>
-                    <input id="input-email" type="email" required />
-                </div> 
-                <div>
-                    <label for=input-phone>Phone</label>
-                    <input id="input-phone" type="number" required />
+
+                <div class="testi-card">
+                    <img src="image/shelby.jpg" alt="shelby" />
+                    <p class="quote-testi">Wah Bagus Sekali!!!</p>
+                    <p class="author-testi">Muhammad Rizki B</p>
                 </div>
-                <div>
-                    <label for="input-subject">Subject</label>
-                    <select id="input-subject"> 
-                        <option value="" hidden>Select</option>
-                        <option>Frontend</option>
-                        <option>Backend</option>
-                        <option>Fullstack</option>
-                    </select>
-                <div>
-                    <label for="input-message">Input Message</label>
-                    <textarea id="input-message" rows="5" cols="10"></textarea>
-                </div>
-                <div class="button-container">
-                    <button type="button" onclick="submitData()">Submit</button>
-                </div>  
-                </form>
-            </div>
+
+                <div class="testi-card">
+                    <img src="image/shelby.jpg" alt="shelby" />
+                    <p class="quote-testi">Wah Bagus Sekali!!!</p>
+                    <p class="author-testi">Muhammad Rizki B</p>
+                </div> -->
+            </section>
         </div>
         
-        <script src="js/contact.js"></script>
+
         <script src="js/index.js"></script>
+        <script src="js/testimonials.js"></script>
     </body>
+
 </html>

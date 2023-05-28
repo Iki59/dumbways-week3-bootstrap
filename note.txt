@@ -15,6 +15,56 @@ Note styling
 
 Inline > ID > Class > Element id lebih dari class jadi ketika kita menggunakan id active dengan class active maka yang didahulukan itu ID
 
+-- OOP --
 
+OOP yaitu Object Oriented Programming atau Pemograman berbasis objek. yang dimana ini salah satu cara untuk menuliskan kode dimana kita bisa menulis code yang sama berulang kali.
+Contoh: Java, Python, C++. etc.
+OOP berguna untuk membuat code menjadi simple sehingga memudahkan maintenance.
+Dalam OOP ada:
+1. Class Concepts yaitu secara simple merupakan template atau blueprint untuk membuat objek. kita bisa mendefinisika properties dan method yang dimiliki objek.
+Contoh: Case Dog
 
+-- Base Class Dog (definisi dog yang belum diberi value)
+Properties:
+Color_Eye Color_Height_Length_Weight
+Methods:
+Sit_Lay Down_Shake_Come
 
+methods sama seperti perintah
+
+Object Concepts
+--- Create Instance to "Object" (sudah diberi value)
+_Properties_:
+Color: Yelow
+Eye Color: Brown
+Height: 17 in
+Length: 35 in
+Weight: 24 pounds
+_Methods_:
+Sit_Lay Down_Shake_Come
+
+2. Inheritance Concepts adalah mekanisme yang mengizinkan kita untuk membuat class baru yang didasari oleh class sebelumnya.
+class baru ini menggunakan properties dan methods dari class warisannya dan juga dapat menambahkan properties dan method yang baru.
+inheritance berfungsi membuat class baru berdasarkan class yang sudah ada sebelumnya. ibarat orang tua dengan anak pasti setiap keturunan ada sesuatu yang berkembang.
+
+contoh oMamalia (brain=true, legs=0) menurunkan prop dan meth ke oPet dan oHuman, oPet menambahkan prop & meth baru yaitu legs=4, fleas=0. dan oHuman menambahkan prop & meth baru legs=2
+kemudian menurunkan dua turunan yaitu oDog dengan prop & meth baru fleas=8 dan cat dengan prop & meth baru fleas: 4
+
+3 Polymorphism concepts yaitu dimana kita dapat membuat beberapa form, dalam konsep OOP polymorphism dipakai untuk membuat beberapa class yang nantinya kita anggap mereka class yang sama.
+Contoh: Ordo atau Family dari Kucing yaitu Singa, Harimau, Macan, Kucing, Jaguar, Cheetah.
+Mereka class hewannya berbeda tapi di satu class ordo yang sama.
+contoh juga manusia, anjing, bebek dan kucing itu bsa berbicara, tapi cara bicaranya berbeda. Manusia: "now speak" anjing: "woof" bebek: "quack" kucing: "meow".
+
+4. Abstraction Concepts yaitu proses yang dimana kita hanya fokus ke beberapa fitur yang esensial saja dari object atau sistem yang kita buat, kalau ada yang tidak esensial itu akan di ignore/skip.
+Misalnya:
+Person punya class first name, last name, skills, job tapi esensi yang akan diproses yaitu first name itu, person: rizki, fahrul, fais.
+Job punya class company, position, salary tap esensinya yaitu position jadi outputnya Job: Developer, Nurse, etc.
+
+5. Encapsulation Concepts yaitu
+encapsulation dan abstraction kurang lebih sama namun fungsi dan kegunannya berbeda. mplementasi abstraksi itu kita hilangin. encpsulation ini hanya di satu unit atau class
+artinya object didalamnya hanya bisa dirubah didalamnya ibarat menjaga privasi kita, yang bisa memodifikasi privasi kita ya hanya kita, kecuali ada method tertentu.
+misal yang membuat kita bahagia itu kita sendiri, kecuali ketika kita stress butuh bantuan maka kita menggunakan alternatif/method berupa orang lain yaitu psikiater. berarti ada kondisinya, kondisi yang lain yaitu kita bercerita ke orang lain.
+sama seperti username dan password akun
+sama seperti tamu yang memasuki rumah kita, tamu tidak boleh masuk ke kamar pribadi kita kecuali keluarga atau sahabat yang datang ke rumah itu boleh masuk ke kamar pribadi kita karena ada kondisi yang memperbolehkan orang-orang tertentu untuk memasuki kamar pribadi.
+
+jadi OOP adalah paradigma programmming yang memfokuskan kita untuk membuat code yang kita bangun menjadi reusable, sehingga memudahkan maintenance
