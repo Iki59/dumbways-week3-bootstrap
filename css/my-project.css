@@ -131,6 +131,11 @@
     cursor: pointer;
 }
 
+.button-group button:hover {
+    background-color: black;
+ }
+
+
 /* blog lis */
 
 #contents {
@@ -181,6 +186,7 @@
     background: #1E3050;
     color: white;
     margin-left: 8px;
+    cursor: pointer;
  }
 
  .project-list-item .btn-group .btn-edit {
@@ -190,6 +196,7 @@
     background: #1E3050;
     color: white;
     border-radius: 4px;
+    cursor: pointer;
  }
 
 .project-list-item h1 a {

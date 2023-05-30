@@ -26,6 +26,5 @@ async function asyncFunction() {
     console.log(response)
 }
 
-condition = false
 
 asyncFunction() //we call the function here

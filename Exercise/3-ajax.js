@@ -18,3 +18,4 @@ xhr.send(); //send the request to the server
 // AJAX is a techique for making asynchronous HTTP request from a web page to a server, using the XMLHTTPRequest object in the browser. Since the XMLHTTPRequest object is specific to the browser environment, it cannot be use directly in Node.JS. So we gonna make it directly in our project.
 
 // and it is gonna using connection too, because we are gonna using AJAx to request data on internet.
+// 

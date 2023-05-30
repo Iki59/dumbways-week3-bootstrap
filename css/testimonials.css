@@ -40,6 +40,10 @@
     margin-bottom: 5px;
 }
 
+.author-testi i {
+    color: goldenrod;
+}
+
 .container-rating {
     display: flex;
     flex-direction: column;
@@ -60,6 +64,10 @@
 
 .rating-btn i {
     color: white;
+}
+
+button:hover {
+    background-color: goldenrod;
 }
 
 @media only screen and (max-width: 900px) {
