@@ -77,17 +77,25 @@ function addProject(event) {
     let hoursInDays = 24; 
     let daysInMonth = 30; 
     let monthInYear = 12; 
-    let distanceDay = Math.floor(distance / (milisecond * secondInHours * hoursInDays)
+    
+    let distanceDay = Math.floor(distance / (milisecond * secondInHours * hoursInDays) 
     ); 
     let distanceMonth = Math.floor(distance / (milisecond * secondInHours * hoursInDays * daysInMonth)
     );
     let distanceYear = Math.floor(distance /(milisecond * secondInHours * hoursInDays * daysInMonth * monthInYear)
     );
 
+    if (distanceDay < distanceMonth) {
+        distanceDay = distanceMonth - distanceDay
+    } else if (distanceMonth < distanceYear) {
+        distanceMonth = distanceYear - distanceMonth
+    }
+
+    
     if (distanceYear > 0) {
-        return `${distanceYear} Tahun - ${distanceMonth} Bulan - ${distanceDay} Hari`;
+        return `${distanceYear} Tahun`;
       } else if (distanceMonth > 0) {
-        return `${distanceMonth} Bulan - ${distanceDay} Hari`;
+        return `${distanceMonth} Bulan`;
       } else if (distanceDay > 0) {
         return `${distanceDay} Hari`
       }
@@ -226,7 +234,7 @@ function getDistanceTime(time) {
     let hoursInDays = 24; //1 Hari itu 24 Jam
 
     let distanceDay = Math.floor(
-        distance / (milisecond * secondInHours * hoursInDays)); //jadi ini 1/8640000
+        distance / (milisecond * secondInHours * hoursInDays)); //jadi ini 1/86400000
     let distanceHours = Math.floor(
         distance / (milisecond * 60 * 60)); //jadi 1/3600000
     let distanceMinutes = Math.floor(

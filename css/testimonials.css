@@ -1,8 +1,8 @@
 .container-testi {
-    padding: 40px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 50px 30px 20px 30px;
 }
 
 .testi {
@@ -15,8 +15,8 @@
 
 .testi-card {
     width: 25%;
-    margin: 0 15px 30px 15px;
-    padding: 20px;
+    margin: 0 15px 20px 20px;
+    padding: 15px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0)
 }
@@ -31,12 +31,35 @@
     font-size: 16px;
     font-style: italic;
     line-height: 1.5;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 
 .author-testi {
     font-weight: bold;
     text-align: right;
+    margin-bottom: 5px;
+}
+
+.container-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating-btn {
+    margin: 10px 0;
+    padding: 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+.rating-btn i {
+    color: white;
 }
 
 @media only screen and (max-width: 900px) {
@@ -45,8 +68,13 @@
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 500px) {
     .testi-card {
         width: 60%;
+        margin-top: -10px;
+    }
+    .rating-btn {
+        font-size: 15px;
+        padding: 0 12px;
     }
 }

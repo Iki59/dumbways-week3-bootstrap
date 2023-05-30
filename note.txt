@@ -68,3 +68,7 @@ sama seperti username dan password akun
 sama seperti tamu yang memasuki rumah kita, tamu tidak boleh masuk ke kamar pribadi kita kecuali keluarga atau sahabat yang datang ke rumah itu boleh masuk ke kamar pribadi kita karena ada kondisi yang memperbolehkan orang-orang tertentu untuk memasuki kamar pribadi.
 
 jadi OOP adalah paradigma programmming yang memfokuskan kita untuk membuat code yang kita bangun menjadi reusable, sehingga memudahkan maintenance
+
+
+---Hof & Callbacks
+
