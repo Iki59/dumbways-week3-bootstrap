@@ -149,7 +149,7 @@ p {
     margin: 30px 67px 20px 67px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
     .project-detail-container .content-left img {
         width: 450px;
     }
@@ -170,7 +170,7 @@ p {
 
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
     h1 {
         font-size: 30px;
     }

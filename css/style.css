@@ -189,7 +189,7 @@ section{
     padding: 10px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
     body {
         margin: 0;
         padding-right: none;
@@ -278,7 +278,7 @@ section{
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
     #barsmenu {
         display: block;
     }

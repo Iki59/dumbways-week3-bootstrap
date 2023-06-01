@@ -92,82 +92,155 @@
 // get author diatas menandakan kita sudah menggunakan polymorphism
 
 
-const testimonialData = [
-{
-    author: "Thomas Shelby",
-    quote: "Mantep banget weh!",
-    image:
-        "https://assets.kompasiana.com/items/album/2023/02/03/1675436655926-63dd22708c39af24284b5532.png?t=o&v=400",
-    rating: 5,
-},
-{
-    author: "Johnny Depp",
-    quote: "Keren banget!",
-    image:
-        "https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_2250,w_4000,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1672176770/GettyImages-1240637933_nuomc8",
-    rating: 4,
-},
-{
-    author: "Mamang Mikir",
-    quote: "Jenius banget!",
-    image:
-        "https://pyxis.nymag.com/v1/imgs/d6a/dc7/4a5001b7beea096457f480c8808572428b-09-roll-safe.2x.h473.w710.jpg",
-    rating: 4,
-},
-{
-    author: "Amin Richman",
-    quote: "Website Murahan! Gua beli 1000 hp buat bukain nih web, kasian lu!",
-    image:
-        "https://cdn.kibrispdr.org/data/4/amin-richman-meme-50.png",
-    rating: 3,
-},
-{
-    author: "Mad Dog",
-    quote: "Website sampah! Gua bengkokin tulang ekorlu ya!",
-    image:
-        "https://i.kym-cdn.com/entries/icons/original/000/016/068/mad-dog.jpg",
-    rating: 1,
-},
-]
+// const testimonialData = [
+// {
+//     author: "Thomas Shelby",
+//     quote: "Mantep banget weh!",
+//     image:
+//         "https://assets.kompasiana.com/items/album/2023/02/03/1675436655926-63dd22708c39af24284b5532.png?t=o&v=400",
+//     rating: 5,
+// },
+// {
+//     author: "Johnny Depp",
+//     quote: "Keren banget!",
+//     image:
+//         "https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_2250,w_4000,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1672176770/GettyImages-1240637933_nuomc8",
+//     rating: 4,
+// },
+// {
+//     author: "Mamang Mikir",
+//     quote: "Jenius banget!",
+//     image:
+//         "https://pyxis.nymag.com/v1/imgs/d6a/dc7/4a5001b7beea096457f480c8808572428b-09-roll-safe.2x.h473.w710.jpg",
+//     rating: 4,
+// },
+// {
+//     author: "Amin Richman",
+//     quote: "Website Murahan! Gua beli 1000 hp buat bukain nih web, kasian lu!",
+//     image:
+//         "https://cdn.kibrispdr.org/data/4/amin-richman-meme-50.png",
+//     rating: 3,
+// },
+// {
+//     author: "Mad Dog",
+//     quote: "Website sampah! Gua bengkokin tulang ekorlu ya!",
+//     image:
+//         "https://i.kym-cdn.com/entries/icons/original/000/016/068/mad-dog.jpg",
+//     rating: 1,
+// },
+// ]
 
-function allTestimonials() {
-    let testiHTML = "";
-    testimonialData.forEach(function(item) {
-        testiHTML += `<div class="testi-card">
-        <img src="${item.image}"
-        <p class="quote-testi">${item.quote}</p>
-        <p class="author-testi">${item.author}</p>
-        <p class="author-testi">${item.rating} <i class="fa-solid fa-star"></i></p>
-        </div>`
-    })
-    document.getElementById("testi").innerHTML = testiHTML;
+// function allTestimonials() {
+//     let testiHTML = "";
+//     testimonialData.forEach(function(item) {
+//         testiHTML += `<div class="testi-card">
+//         <img src="${item.image}"
+//         <p class="quote-testi">${item.quote}</p>
+//         <p class="author-testi">${item.author}</p>
+//         <p class="author-testi">${item.rating} <i class="fa-solid fa-star"></i></p>
+//         </div>`
+//     })
+//     document.getElementById("testi").innerHTML = testiHTML;
+// }
+
+// allTestimonials()
+
+// function filterTestimonials(rating) {
+//     let testiHTML = "";
+
+//     const testimonialFiltered = testimonialData.filter(function (item) {
+//         return item.rating === rating;
+//     })
+
+//     // console.log(testimonialFiltered)
+//     if (testimonialFiltered.length === 0) {
+//         testiHTML += `<h1>Data not found!</h1>`
+//     } else {
+//         testimonialFiltered.forEach(function(item) {
+//             testiHTML += `<div class="testi-card">
+//             <img src="${item.image}"
+//             <p class="quote-testi">${item.quote}</p>
+//             <p class="author-testi">${item.author}</p>
+//             <p class="author-testi">${item.rating} <i class="fa-solid fa-star"></i></p>
+//             </div>`
+//         })
+//     }
+
+//     document.getElementById("testi").innerHTML = testiHTML;
+// }
+
+
+const promise = new Promise((resolve, reject) => {
+    const testimonialWeb = new XMLHttpRequest();
+    testimonialWeb.open('GET', "https://api.npoint.io/7ec9b4e57de9e5dda66f", true);
+    console.log(testimonialWeb);
+    testimonialWeb.onload = () => {
+        if (testimonialWeb.status === 200) {
+            // we parsing it so it is easier to read in console
+            // response vs responseText, the difference are, responseText is an older version, when response is more newer, but the output is still same/similiar.
+            // 200 ini maksudnya yaitu status code di network
+            resolve(JSON.parse(testimonialWeb.response));
+        } else {
+            reject("Data not found.");
+        }
+    }
+    testimonialWeb.onerror = () => {
+        reject("Network error.")
+    }
+    testimonialWeb.send();
+})
+
+promise
+    .then(function(value) {
+    console.log(value)
+}).catch(function(reason) {
+    return alert("Network error, can't load the testimonials.")
+})
+
+async function getAllTestimonials() {
+    const response = await promise;
+    // console.log(response)
+
+    let testimonialHTML = "";
+    response.forEach(function(item) {
+    testimonialHTML += `<div class="testi-card">
+                        <img src="${item.image}"
+                        <p class="quote-testi">${item.quote}</p>
+                        <p class="author-testi">${item.author}</p>
+                        <p class="author-testi">${item.rating} <i class="fa-solid fa-star"></i></p>
+                        </div>`;
+    });
+
+    document.getElementById("testi").innerHTML = testimonialHTML;
 }
 
-allTestimonials()
+getAllTestimonials();
 
-function filterTestimonials(rating) {
-    let testiHTML = "";
+async function getFilteredTestimonials(rating) {
+    const response = await promise; //dipakai disini artinya kita menunggu promisenya selesai, kalau tidak pake await itu akan ditampilkan status pending
 
-    const testimonialFiltered = testimonialData.filter(function (item) {
+    const testimonialFiltered = response.filter((item) => {
         return item.rating === rating;
     })
-
     // console.log(testimonialFiltered)
+
+    let testimonialHTML = "";
+
     if (testimonialFiltered.length === 0) {
-        testiHTML += `<h1>Data not found!</h1>`
+        testimonialHTML = "<h1>Data not found!</h1>";
     } else {
-        testimonialFiltered.forEach(function(item) {
-            testiHTML += `<div class="testi-card">
+        testimonialFiltered.forEach((item) => {
+            testimonialHTML += `<div class="testi-card">
             <img src="${item.image}"
             <p class="quote-testi">${item.quote}</p>
             <p class="author-testi">${item.author}</p>
             <p class="author-testi">${item.rating} <i class="fa-solid fa-star"></i></p>
-            </div>`
-        })
-    }
-
-    document.getElementById("testi").innerHTML = testiHTML;
+            </div>`;
+        });
+    };
+    document.getElementById("testi").innerHTML = testimonialHTML;
 }
+
 
 
 

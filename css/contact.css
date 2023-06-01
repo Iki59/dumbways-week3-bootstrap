@@ -54,7 +54,7 @@ button:hover {
     background-color: black
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
     .contact-me {
         align-items: center;
     }
@@ -64,7 +64,7 @@ button:hover {
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
     .nav-right i {
         margin-right: -45px;
         margin-bottom: 22px;

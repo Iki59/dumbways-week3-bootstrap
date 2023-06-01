@@ -72,3 +72,16 @@ jadi OOP adalah paradigma programmming yang memfokuskan kita untuk membuat code 
 
 ---Hof & Callbacks
 
+
+---Asynchronous Programming---
+Asynchronous adalah cara kita menulis code yang memperbolehkan kita menulis code yang memperbolehkan kita menjalankan task secara independen tanpa menunggu task ataupun eksekusi code yang lain.
+selama ini yang kita buat itu synchronous, misal dari line 1-20 itu berurutan jalannya.
+
+Asynchronous Programming adalah cara kita menuliskan kode yang mengizinkan kita menjalankan berbagai task secara independen, tanpa menunggu kode yang lain jalan.
+synchronous itu perintah 1, 2, dst itu berjalan secara berurutan sedakna asynch dia tidak tunggu-tungguan jadi perintah 3 bisa dijalankan bersamaan dengan perintah 2
+
+synchronous itu harus tunggu-tungguan dulu, jadi perintah 1, perintah 2, itu berjalan berurutan
+sedangkan asynch itu perintah 1 dan 2 bisa berjalan bersamaan tanpa menunggu perintah 1 selesai.
+async bisa diibaratkan layer dalam video
+
+
