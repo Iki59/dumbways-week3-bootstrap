@@ -124,14 +124,13 @@
 
 function submitData() {
     let name = document.getElementById("input-name").value;
-    let email = document.getElementById("input-email").value;
     let phone = document.getElementById("input-phone").value;
     let subject = document.getElementById("input-subject").value;
     let message = document.getElementById("input-message").value;
 
     let emailReceiver = "rizkiboediman59@gmail.com"
     let a = document.createElement("a")
-    a.href = `mailto:${emailReceiver}?subject=${subject}&body=Halo, nama saya ${name}, ${message}. Silahkan kontak saya di ${phone}, terima`
+    a.href = `mailto:${emailReceiver}?subject=${subject}&body=Halo, nama saya ${name}, ${message}. Silahkan kontak saya di ${phone}, terima kasih`
 }
 
 

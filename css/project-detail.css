@@ -8,23 +8,20 @@ h1{
     text-align: center
 }
 
-.project-detail {
-    display: flex;
-    justify-content: center;
-}
-
 .project-detail .project-detail-container h1 {
     margin-bottom: 50px;
     font-weight: bold;
 }
 
-.project-detail .project-detail-container {
-    display: flex;
-    width: 90%;
-    margin-bottom: none;
+.project-tech .python-tech {
+    margin-left: 28px;
 }
 
-.project-detail .project-detail-container .content-left {
+p {
+    line-height: 35px;
+    text-align: justify;
+}
+/* .project-detail .project-detail-container .content-left {
     flex: 70%;
     margin-left: 0px;
 }
@@ -32,9 +29,9 @@ h1{
 .project-detail .project-detail-container .content-right {
     flex: 30%;
     margin: 150px 250px 0px 0px;
-}
+} */
 
-.project-detail-container .content-left img {
+/* .project-detail-container .content-left img {
     width: 600px;
 }
 
@@ -137,19 +134,10 @@ h1{
 
 .project-tech .tech-top, .tech-bottom h3 {
     font-size: 15px;
-}
+} */
 
-p {
-    margin-top: 40px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 35px;
-    text-align: justify;
-    margin: 30px 67px 20px 67px;
-}
 
-@media only screen and (max-width: 1200px) {
+/* @media only screen and (max-width: 1200px) {
     .project-detail-container .content-left img {
         width: 450px;
     }
@@ -269,4 +257,4 @@ p {
 
    
 
-}
+} */

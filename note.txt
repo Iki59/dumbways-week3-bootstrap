@@ -84,4 +84,9 @@ synchronous itu harus tunggu-tungguan dulu, jadi perintah 1, perintah 2, itu ber
 sedangkan asynch itu perintah 1 dan 2 bisa berjalan bersamaan tanpa menunggu perintah 1 selesai.
 async bisa diibaratkan layer dalam video
 
+Bootstrap and Golang
+Bootstrap merupakan salah satu framework css yang memperbolehkan kita membangun layout website tanpa terlalu banyak menggunakan style css.
+
+Golang atau Go language dibangun atau didevelop oleh google
+
 

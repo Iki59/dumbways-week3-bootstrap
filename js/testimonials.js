@@ -203,11 +203,10 @@ async function getAllTestimonials() {
 
     let testimonialHTML = "";
     response.forEach(function(item) {
-    testimonialHTML += `<div class="testi-card">
-                        <img src="${item.image}"
-                        <p class="quote-testi">${item.quote}</p>
-                        <p class="author-testi">${item.author}</p>
-                        <p class="author-testi">${item.rating} <i class="fa-solid fa-star"></i></p>
+    testimonialHTML += `<div class="card p-3 bg-body-tertiary w-lg-25">
+                            <img src="${item.image}" class="img-fluid object-fit-cover w-100" />
+                            <p class="quote-testi fs-6 fst-italic mt-1">${item.quote}</p>
+                            <p class="author-testi fw-bold text-end">${item.rating} <i class="fa-solid fa-star"></i></p>
                         </div>`;
     });
 
@@ -230,12 +229,11 @@ async function getFilteredTestimonials(rating) {
         testimonialHTML = "<h1>Data not found!</h1>";
     } else {
         testimonialFiltered.forEach((item) => {
-            testimonialHTML += `<div class="testi-card">
-            <img src="${item.image}"
-            <p class="quote-testi">${item.quote}</p>
-            <p class="author-testi">${item.author}</p>
-            <p class="author-testi">${item.rating} <i class="fa-solid fa-star"></i></p>
-            </div>`;
+            testimonialHTML += `<div class="card p-3 bg-body-tertiary w-lg-25">
+                                    <img src="${item.image}" class="img-fluid object-fit-cover w-100" />
+                                    <p class="quote-testi fs-6 fst-italic mt-1">${item.quote}</p>
+                                    <p class="author-testi fw-bold text-end">${item.rating} <i class="fa-solid fa-star"></i></p>
+                                </div>`;
         });
     };
     document.getElementById("testi").innerHTML = testimonialHTML;

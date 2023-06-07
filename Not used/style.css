@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: black
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(51, 93, 121, 0.493);
+
+}
+
+nav {
+    background-color: #ebeaea;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center
+}
+
+nav ul li {
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: 600;
+}
+
+nav ul li .active {
+    color: #1E3050;
+}
+
+.nav-left {
+    flex: 80%;
+    /* mengatur lebarnya */
+}
+
+.nav-right {
+    flex: 20%;
+    text-align: end;
+    margin-right: 25px;
+}
+
+.nav-right a {
+    background-color: #1E3050;
+    padding: 8px 20px;
+    color: white;
+    border-radius: 5px;
+}
+
+.container{
+    width: 1100px;
+    margin: 90px auto;
+    padding: 0px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #cecece;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+section{
+    display: flex;
+    width: 90%;
+    padding: 20px;
+}
+
+.left {
+    flex: 65%;
+    margin-right: 40px;
+}
+
+.right {
+    flex: 35%;
+}
+
+.contact-cv {
+    display: flex;
+    margin-top: 30px;
+}
+
+.contact-button button{
+    background-color: #1E3050;
+    padding: 5px 20px;
+    border: 0px;
+    border-radius: 20px;
+}
+
+.cv-button {
+    margin-top: -15px;
+    margin-left: 20px;
+}
+
+.card-me {
+    width: 300px;
+    border: 1px solid #dbdbdb;
+    margin: 30px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #cecece;
+}
+
+.right img {
+    width: 100%;
+    border-radius: 5px
+}
+
+.left h2 {
+    color: #1E3050;
+    margin-top: none;
+}
+
+.skill {
+    display: flex;
+    margin-top: 30px;
+}
+
+.skill .fa-brands.fa-js {
+    font-size: 60px;
+}
+
+.skill .fa-brands.fa-react {
+    font-size: 60px;
+}
+
+.skill .fa-brands.fa-node {
+    font-size: 60px;
+}
+
+.skill p {
+    margin-right: 15px;
+}
+
+.social-media i {
+    margin-right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#barsmenu {
+    display: none;
+}
+
+.hamburger-nav-container {
+    font-size: 25px;
+    list-style-type: none;
+    display: none;
+}
+
+.hamburger-nav-container a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-color: #d3d3d3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 0px;
+}
+
+.hamburger-nav-container .hamburger-contact a p {
+    background-color:#1E3050;
+    border-radius: 15px;
+    color: #fff;
+    margin: auto;
+    padding: 1px 22px;
+    
+}
+
+.hamburger-nav-container .hamburger-active {
+    text-decoration: none;
+    color: #fff;
+    background-color: #1E3050;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+        margin: 0;
+        padding-right: none;
+    }
+
+    nav {
+        height: 8vh;
+    }
+    
+    nav ul li {
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+    nav ul li a {
+        font-size: 25px;
+    }
+
+    nav ul li img {
+        width: 60px;
+    }
+
+    .card-container {
+        width: 100%;
+    }
+
+    .container {
+        width: 90%;
+        
+    }
+
+    .left {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 100%;
+        margin: 90px 0px 50px 0px;
+        padding: 10px;
+        
+    }
+
+    .right {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        flex: 100%;
+    }
+
+    .skill h2 {
+        margin-right: 5px;
+    }
+
+    .item-collapse {
+        font-size: 18px;
+        margin-left: -10px;
+    }
+
+    .nav-left img {
+        margin-left: -15px;
+    }
+
+    section {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -120px;
+    }
+
+    .card-me {
+        width: 250px;
+        margin-top: -10px;
+    }
+}
+
+
+@media only screen and (max-width: 720px) {
+    #barsmenu {
+        display: block;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .nav-left .item-collapse {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #barsmenu {
+        display: block;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .nav-right {
+        margin-right: 10px;
+    }
+
+    nav {
+        height: 9vh;
+    }
+
+    .nav-left .item-collapse {
+        display: none;
+    }
+
+    nav ul li {
+        margin-left: -5px;
+        margin-top: 5px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    nav ul li img {
+        width: 50px;
+    }
+}

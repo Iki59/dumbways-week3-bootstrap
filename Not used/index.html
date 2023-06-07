@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>Home</title>
+        <!--ini bagian kepala website, terdiri dari judul, title, dsb.-->
+        <link rel="icon" href="image/logo.png" type="image_icon">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" >
+
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li>
+                        <img src="image/logo.png" alt="Dumbways_logo" />
+                    </li>
+                     <li class="item-collapse">
+                        <a class="active" href="index.html">Home</a>
+                    </li>
+                    <li class="item-collapse">
+                        <a href="my-project.html">My Project</a>
+                    </li>
+                    <li class="item-collapse">
+                        <a href="testimonials.html">Testimonials</a>
+                    </li>
+                 </ul>
+            </div>
+            <div class="nav-right item-collapse">
+                <a href="contact.html">Contact Me</a>
+            </div>
+            <div class="nav-right" id="barsmenu">
+                <button style="background-color: transparent; border: none; cursor: pointer;"
+                onclick="openHamburger()"
+                >
+                    <i class="fa-2x fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <div class="hamburger-nav-container" id="hamburger-nav-container">
+            <a href="index.html" class="hamburger-active">Home</a>
+            <a href="my-project.html">My Project</a>
+            <a href="testimonials.html">Testimonials</a>
+            <div class="hamburger-contact">
+                <a href="contact.html">
+                    <p>
+                        Contact
+                    </p>
+                </a>
+            </div>
+          </div>
+          
+          <div class="container">
+            <section>
+            <div class="left">
+                <h2>Hi Welcome to My Hut</h2>
+                <p style="text-align: justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non scelerisque purus.
+                    Nam ornare placerat iaculis. Suspendisse ac magna sit amet neque interdum sodales. In condimentum purus at rhoncus lobortis.
+                    Aliquam eu nisl a magna varius suscipit. Etiam ac leo in tortor pellentesque pretium. Integer porttitor enim varius nisl efficitur facilisis.
+                    Aliquam ut mi ante. Nam pellentesque vel mi id vulputate. Vivamus vel faucibus orci. Morbi sollicitudin interdum laoreet. Praesent a felis eu ligula ultricies accumsan a sed dolor.</p>
+                <div class="contact-cv">
+                    <div class="contact-button">
+                        <button>
+                            <a href="contact.html" style="color: white">Contact</a>
+                        </button>
+                    </div>
+                    <div class="cv-button">
+                        <a href="https://www.linkedin.com/in/muhammad-rizki-budiman-12a71a24b" target="_blank">
+                            <p>download Cv
+                                <i class="fa-solid fa-download"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="social-media" class="card-container">
+                    <h2>Found me on</h2>
+                    <a href="https://www.linkedin.com/in/muhammad-rizki-budiman-12a71a24b" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://web.facebook.com/rinbm59" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/iki__59" target="_blank">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        <div class="right">
+        <div class="card-me">
+            <img
+            src="image/kucing.jpg"
+            alt="menggg"/>
+                <h2 style="text-align: center; line-height: 15px">Muhammad Rizki B</h2>
+                <p style="text-align: center; line-height: -0%; margin-bottom: 15px">Fullstack Developer</p>
+        </div>
+        <!--style width 100% persen diatas namanya sistem parent and child, artinya gambar 100% memenuhi border 350 px diatas
+            semakin naik angka suatu header makin kecil h1 paling besar dan seterusnya-->
+    </section>
+    </div>
+        <!--margin mengatur jarak sebelah atas, kanan bawah dan kiri konten sedangkan text align untuk mengatur konten kita mau ditaruh dimana
+            margin/padding punya 4 value, yaitu atas, kanan, bawah, dan kiri-->    
+        <!--semi coloun atau titik koma untuk memisahkan dua property-->
+            <!--untuk melakukan grouping elemen agar mempermudah kita untuk melakukan styling-->
+        <script src="js/index.js"></script>
+    </body>
+</html>
